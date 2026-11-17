@@ -4,6 +4,7 @@ import { useAuthStore } from "@/stores/authStore";
 import { AppLayout } from "@/components/layout/AppLayout";
 import { LoginPage } from "@/pages/LoginPage";
 import { RegisterPage } from "@/pages/RegisterPage";
+import { LandingPage } from "@/pages/LandingPage";
 import { DashboardPage } from "@/pages/DashboardPage";
 import { MonitoringPage } from "@/pages/MonitoringPage";
 import { SensorsPage } from "@/pages/SensorsPage";
@@ -24,6 +25,21 @@ function ProtectedRoute({ children }: { children: React.ReactNode }) {
   }
 
   return <>{children}</>;
+}
+
+function LandingRedirect() {
+  const token = useAuthStore((s) => s.token);
+  const hydrated = useAuthStore((s) => s.hydrated);
+
+  if (!hydrated) {
+    return null;
+  }
+
+  if (token) {
+    return <Navigate to="/dashboard" replace />;
+  }
+
+  return <LandingPage />;
 }
 
 export default function App() {
@@ -50,6 +66,12 @@ export default function App() {
       <Route path="/register" element={<RegisterPage />} />
       <Route
         path="/"
+        element={
+          <LandingRedirect />
+        }
+      />
+      <Route
+        path="/dashboard"
         element={
           <ProtectedRoute>
             <DashboardPage />

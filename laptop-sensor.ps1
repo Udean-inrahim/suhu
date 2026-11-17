@@ -14,7 +14,7 @@
 param(
   [string]$ApiUrl = "https://tugas-bu-dian.vercel.app",
   [string]$SensorCode = "LAPTOP-01",
-  [string]$ApiKey = "",  # ambil dari dashboard (menu Sensor -> tombol kunci). "" = kirim tanpa key.
+  [string]$ApiKey = "69a4f8c42fcd61e01fe927f8b788ed78",
   [int]$IntervalSeconds = 30
 )
 

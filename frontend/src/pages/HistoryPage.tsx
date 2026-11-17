@@ -165,7 +165,7 @@ export function HistoryPage() {
               <CardTitle>Riwayat Pengukuran</CardTitle>
               <CardDescription>{meta.total} data ditemukan</CardDescription>
             </div>
-            <span className="shrink-0 rounded-[8px] bg-[#f1f3f9] px-2.5 py-1 text-[12px] font-semibold text-[#3d41ad]">
+            <span className="shrink-0 rounded-[8px] bg-[#f1f3f9] px-2.5 py-1 text-[12px] font-semibold text-[#0e9f90]">
               {meta.page}/{meta.totalPages}
             </span>
           </CardHeader>

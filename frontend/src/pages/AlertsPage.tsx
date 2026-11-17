@@ -90,7 +90,7 @@ export function AlertsPage() {
           <CardHeader className="flex flex-row items-center justify-between gap-3">
             <div>
               <CardTitle className="flex items-center gap-2">
-                <BellRing className="h-4 w-4 text-[#3d41ad]" />
+                <BellRing className="h-4 w-4 text-[#0e9f90]" />
                 Daftar Alert
               </CardTitle>
               <CardDescription>

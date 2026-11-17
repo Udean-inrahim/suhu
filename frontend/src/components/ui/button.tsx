@@ -4,22 +4,22 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full text-sm font-semibold focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 transition-colors",
+  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-[10px] text-[13.5px] font-semibold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#14b8a6]/40 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 transition-colors",
   {
     variants: {
       variant: {
         default: "btn-ink",
-        destructive: "border border-destructive bg-transparent text-destructive hover:bg-destructive hover:text-destructive-foreground",
+        destructive: "border border-[#ffb3ba] bg-white text-[#d6333f] hover:bg-[#fff1f2]",
         outline: "btn-outline-line",
         secondary: "btn-ink-solid",
-        ghost: "bg-transparent text-foreground hover:bg-accent hover:text-accent-foreground",
+        ghost: "bg-transparent text-[#545b6c] hover:bg-[#f1f3f9] hover:text-[#272a3b]",
         link: "link text-foreground underline-offset-4",
         white: "btn-primary-blue",
       },
       size: {
-        default: "h-10 px-6",
-        sm: "h-8 px-4 text-xs",
-        lg: "h-12 px-8",
+        default: "h-11 px-5",
+        sm: "h-9 px-3.5 text-[12.5px]",
+        lg: "h-12 px-7",
         icon: "h-10 w-10",
       },
     },

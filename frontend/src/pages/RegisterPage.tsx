@@ -206,7 +206,7 @@ export function RegisterPage() {
           <Link
             to="/login"
             state={{ dir: "to-login" }}
-            className="font-semibold text-[#3d41ad] hover:underline"
+            className="font-semibold text-[#0e9f90] hover:underline"
           >
             Login
           </Link>
@@ -255,7 +255,7 @@ export function RegisterPage() {
                         <p className="text-xs text-muted-foreground">Memeriksa ketersediaan...</p>
                       )}
                       {!usernameState.taken && !usernameState.invalid && !usernameState.checking && username.trim().length >= 3 && (
-                        <p className="text-xs font-medium text-emerald-600">Username tersedia</p>
+                        <p className="text-xs font-medium text-[#1e9e7e]">Username tersedia</p>
                       )}
                     </div>
                     <div className="space-y-2">

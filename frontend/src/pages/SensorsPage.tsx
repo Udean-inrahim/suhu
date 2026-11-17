@@ -117,7 +117,7 @@ export function SensorsPage() {
 
       <Reveal>
         <div className="grid grid-cols-2 gap-3 lg:grid-cols-4">
-          <StatChip label="Total Sensor" value={sensors.length} dot="bg-[#4448b8]" />
+          <StatChip label="Total Sensor" value={sensors.length} dot="bg-[#14b8a6]" />
           <StatChip label="Online" value={sensors.filter((s) => s.isActive && s.status === "ONLINE").length} dot="bg-[#37bc99]" />
           <StatChip label="Offline" value={sensors.filter((s) => s.isActive && s.status !== "ONLINE").length} dot="bg-[#ff6570]" />
           <StatChip label="Nonaktif" value={sensors.filter((s) => !s.isActive).length} dot="bg-[#b9bfcc]" />
@@ -291,7 +291,7 @@ export function SensorsPage() {
           </AlertDialogHeader>
           <AlertDialogFooter>
             <AlertDialogCancel>Batal</AlertDialogCancel>
-            <AlertDialogAction className="bg-red-600 hover:bg-red-700" onClick={handleDelete}>
+            <AlertDialogAction className="bg-[#d64550] text-white hover:bg-[#c13a45]" onClick={handleDelete}>
               Hapus
             </AlertDialogAction>
           </AlertDialogFooter>

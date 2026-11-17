@@ -76,14 +76,14 @@ export function AuthLayout({ title, subtitle, children, footer, swapClass }: Aut
   );
 
   return (
-    <div className="flex min-h-dvh items-center justify-center bg-[#f1f3f9] px-4 py-8">
-      <main className="w-[min(1320px,100%)] overflow-hidden rounded-[30px] bg-[#262a4a] p-[clamp(16px,2.2vw,28px)] shadow-[0_30px_80px_rgba(38,42,74,0.28)]">
+    <div className="flex min-h-dvh items-center justify-center bg-[#eef4f6] px-4 py-8">
+      <main className="w-[min(1320px,100%)] overflow-hidden rounded-[30px] bg-[#0f3a37] p-[clamp(16px,2.2vw,28px)] shadow-[0_30px_80px_rgba(15,58,55,0.3)]">
         <div className="grid items-center gap-10 min-[880px]:grid-cols-[1.08fr_0.92fr] min-[1200px]:gap-14">
           <section className="text-white">
             <div className="flex items-center gap-3">
-              <span className="grid h-10 w-10 place-items-center rounded-[12px] bg-[#4448b8] text-[15px] font-extrabold text-white">
-                ST
-              </span>
+<span className="grid h-10 w-10 place-items-center rounded-[12px] bg-[#14b8a6] text-[15px] font-extrabold text-white">
+              ST
+            </span>
               <span className="text-[15px] font-bold tracking-[-0.01em]">Smart Temp Monitor</span>
             </div>
 
@@ -156,7 +156,7 @@ export function AuthLayout({ title, subtitle, children, footer, swapClass }: Aut
             <ul className="mt-8 space-y-2.5">
               {FEATURES.map((f) => (
                 <li key={f} className="flex items-start gap-2.5 text-[13.5px] text-white/80">
-                  <ListChecks className="mt-0.5 h-4 w-4 shrink-0 text-[#9aa2ff]" />
+                  <ListChecks className="mt-0.5 h-4 w-4 shrink-0 text-[#7fe3c6]" />
                   {f}
                 </li>
               ))}
@@ -170,7 +170,7 @@ export function AuthLayout({ title, subtitle, children, footer, swapClass }: Aut
                 href="https://github.com/Udean-inrahim/tugas-bu-dian/releases/latest"
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex cursor-pointer items-center gap-2 rounded-[10px] bg-[#4448b8] px-3.5 py-2 text-[13px] font-semibold text-white transition-colors hover:bg-[#5256c9]"
+                className="inline-flex cursor-pointer items-center gap-2 rounded-[10px] bg-[#14b8a6] px-3.5 py-2 text-[13px] font-semibold text-white transition-colors hover:bg-[#0e9f90]"
               >
                 <Download className="h-4 w-4" />
                 Unduh APK
@@ -180,7 +180,7 @@ export function AuthLayout({ title, subtitle, children, footer, swapClass }: Aut
 
           <section className="auth-card rounded-[22px] border border-[#eceef5] bg-white p-[clamp(24px,2.6vw,40px)] shadow-[0_18px_45px_rgba(20,24,50,0.18)]">
             <div className="flex items-center gap-2.5">
-              <span className="grid h-8 w-8 place-items-center rounded-[9px] bg-[#4448b8] text-[12px] font-extrabold text-white">
+              <span className="grid h-8 w-8 place-items-center rounded-[9px] bg-[#14b8a6] text-[12px] font-extrabold text-white">
                 ST
               </span>
               <span className="text-[13.5px] font-bold text-[#272a3b]">Smart Temp</span>
@@ -217,7 +217,7 @@ export function AuthLayout({ title, subtitle, children, footer, swapClass }: Aut
 
 export function AuthFooterLink({ to, state, children }: { to: string; state?: unknown; children: ReactNode }) {
   return (
-    <Link to={to} state={state} className="font-semibold text-[#3d41ad] hover:underline">
+    <Link to={to} state={state} className="font-semibold text-[#0e9f90] hover:underline">
       {children}
     </Link>
   );

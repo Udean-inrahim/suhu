@@ -142,7 +142,7 @@ export function LoginPage() {
             <Link
               to="/register"
               state={{ dir: "to-register" }}
-              className="font-semibold text-[#3d41ad] hover:underline"
+              className="font-semibold text-[#0e9f90] hover:underline"
             >
               Buat akun gratis
             </Link>
@@ -163,8 +163,8 @@ export function LoginPage() {
                         onClick={() => setLoginMode(mode)}
                         className={`flex-1 cursor-pointer rounded-[9px] px-3 py-2 font-semibold transition-colors ${
                           loginMode === mode
-                            ? "bg-white text-[#3d41ad] shadow-[0_2px_8px_rgba(72,78,105,0.1)]"
-                            : "bg-transparent text-[#545b6c] hover:text-[#3d41ad]"
+                            ? "bg-white text-[#0e9f90] shadow-[0_2px_8px_rgba(72,78,105,0.1)]"
+                            : "bg-transparent text-[#545b6c] hover:text-[#0e9f90]"
                         }`}
                       >
                         {label}
@@ -231,7 +231,7 @@ export function LoginPage() {
                             /* abaikan */
                           }
                         }}
-                        className="h-4 w-4 accent-[#2563f0]"
+                        className="h-4 w-4 accent-[#0e9f90]"
                       />
                       Ingat saya
                     </label>

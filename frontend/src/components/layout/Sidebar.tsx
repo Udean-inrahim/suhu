@@ -14,7 +14,7 @@ import { useSensors } from "@/hooks/useSensors";
 import { cn } from "@/lib/utils";
 
 const navItems = [
-  { to: "/", label: "Dasbor", icon: LayoutDashboard },
+  { to: "/dashboard", label: "Dasbor", icon: LayoutDashboard },
   { to: "/monitoring", label: "Monitoring", icon: Activity },
   { to: "/sensors", label: "Sensor", icon: Cpu },
   { to: "/history", label: "Riwayat", icon: History },
@@ -40,7 +40,7 @@ export function Sidebar({ onClose }: SidebarProps) {
   return (
     <div className="flex h-full flex-col border-r border-[#e9ebf2] bg-white">
       <div className="flex items-center gap-2.5 px-5 pt-7 pb-7">
-        <span className="grid h-9 w-9 shrink-0 place-items-center rounded-[10px] bg-[#4448b8] text-[15px] font-bold text-white">
+        <span className="grid h-9 w-9 shrink-0 place-items-center rounded-[10px] bg-[#14b8a6] text-[15px] font-bold text-white">
           ST
         </span>
         <div className="min-w-0">
@@ -56,14 +56,14 @@ export function Sidebar({ onClose }: SidebarProps) {
           <NavLink
             key={item.to}
             to={item.to}
-            end={item.to === "/"}
+            end={item.to === "/dashboard"}
             onClick={onClose}
             className={({ isActive }) =>
               cn(
                 "flex items-center gap-3 rounded-[13px] px-3 py-[11px] text-[13.5px] font-semibold transition-colors",
                 isActive
-                  ? "bg-[#3d41ad] text-white shadow-[0_12px_25px_rgba(61,65,173,0.25)]"
-                  : "text-[#626875] hover:bg-[#f1f3f9] hover:text-[#3d41ad]"
+                  ? "bg-[#0e9f90] text-white shadow-[0_12px_25px_rgba(14,159,144,0.28)]"
+                  : "text-[#626875] hover:bg-[#f1f3f9] hover:text-[#0e9f90]"
               )
             }
           >
@@ -99,7 +99,7 @@ export function Sidebar({ onClose }: SidebarProps) {
           <button
             type="button"
             onClick={handleLogout}
-            className="flex w-full cursor-pointer items-center justify-center gap-2 rounded-[10px] bg-[#282b3d] py-2.5 text-[13px] font-semibold text-white transition-colors hover:bg-[#4549b6]"
+            className="flex w-full cursor-pointer items-center justify-center gap-2 rounded-[10px] bg-[#0f172a] py-2.5 text-[13px] font-semibold text-white transition-colors hover:bg-[#0e9f90]"
           >
             <LogOut className="h-4 w-4" />
             Keluar
@@ -107,7 +107,7 @@ export function Sidebar({ onClose }: SidebarProps) {
         </div>
 
         <div className="mt-4 flex items-center gap-2.5 border-t border-[#eceef5] pt-4">
-          <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-[10px] bg-[#edf0fa] text-[13px] font-bold text-[#3d41ad]">
+          <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-[10px] bg-[#e0f5f0] text-[13px] font-bold text-[#0e9f90]">
             {user?.name?.charAt(0).toUpperCase() ?? "U"}
           </div>
           <div className="min-w-0">

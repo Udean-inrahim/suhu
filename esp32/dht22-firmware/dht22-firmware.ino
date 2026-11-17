@@ -31,8 +31,8 @@
 #include <DHT.h>
 
 // ------------------ KONFIGURASI ------------------
-const char* SSID_WIFI = "NAMA_WIFI_ANDA";
-const char* PASSWORD_WIFI = "PASSWORD_WIFI_ANDA";
+const char* SSID_WIFI = "Kedai Supeno Belakang";
+const char* PASSWORD_WIFI = "kopiaren";
 const char* API_URL = "https://tugas-bu-dian.vercel.app/api/readings";
 const char* SENSOR_CODE = "ESP32-01";   // WAJIB sama dengan kode di dashboard
 const char* API_KEY = "ISI_API_KEY_DARI_DASHBOARD"; // salin dari menu Sensor -> tombol kunci

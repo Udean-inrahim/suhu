@@ -20,8 +20,8 @@ export function PageHeader({ title, description, eyebrow, action, className }: P
     >
       <div>
         {eyebrow && (
-          <p className="mb-2 inline-flex items-center gap-2 rounded-[7px] bg-[#f1f3f9] px-2.5 py-1 text-[12px] font-semibold text-[#3d41ad]">
-            <span className="inline-block h-1.5 w-1.5 rounded-full bg-[#3d41ad]" />
+          <p className="mb-2 inline-flex items-center gap-2 rounded-[7px] bg-[#f1f3f9] px-2.5 py-1 text-[12px] font-semibold text-[#0e9f90]">
+            <span className="inline-block h-1.5 w-1.5 rounded-full bg-[#0e9f90]" />
             {eyebrow}
           </p>
         )}

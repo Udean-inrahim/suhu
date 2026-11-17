@@ -297,7 +297,7 @@ export function SettingsPage() {
         <Card>
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
-              <KeyRound className="h-4 w-4 text-[#3d41ad]" /> Reset Password Pengguna
+              <KeyRound className="h-4 w-4 text-[#0e9f90]" /> Reset Password Pengguna
             </CardTitle>
             <CardDescription>
               Buat kode reset 6 digit untuk pengguna yang lupa password, lalu berikan kode tersebut
@@ -505,7 +505,7 @@ function AccountCard() {
             !usernameState.checking &&
             username.trim().length >= 3 &&
             username.trim().toLowerCase() !== (user?.username ?? "").toLowerCase() && (
-              <p className="text-xs font-medium text-emerald-600">Username tersedia</p>
+              <p className="text-xs font-medium text-[#1e9e7e]">Username tersedia</p>
             )}
         </div>
         <div>

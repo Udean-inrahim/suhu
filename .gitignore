@@ -33,3 +33,5 @@ Thumbs.db
 # Local scratch scripts
 diag.cmd
 test-task.cmd
+.vercel
+.env*

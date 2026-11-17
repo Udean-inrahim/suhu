@@ -24,7 +24,7 @@ import "./dashboard.css";
 const DAY_SHORT = ["Ming", "Sen", "Sel", "Rab", "Kam", "Jum", "Sab"];
 
 const NAV_ITEMS = [
-  { to: "/", label: "Dasbor", icon: LayoutDashboard },
+  { to: "/dashboard", label: "Dasbor", icon: LayoutDashboard },
   { to: "/monitoring", label: "Monitoring", icon: Activity },
   { to: "/sensors", label: "Sensor", icon: Cpu },
   { to: "/history", label: "Riwayat", icon: History },
@@ -393,7 +393,7 @@ export function DashboardPage() {
           <nav className="dash-nav" aria-label="Navigasi utama">
             {NAV_ITEMS.map((item) => {
               const isActive =
-                item.to === "/" ? location.pathname === "/" : location.pathname.startsWith(item.to);
+                item.to === "/dashboard" ? location.pathname === "/dashboard" : location.pathname.startsWith(item.to);
               return (
                 <NavLink
                   key={item.to}

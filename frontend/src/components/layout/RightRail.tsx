@@ -7,7 +7,7 @@ import { useAlerts } from "@/hooks/useAlerts";
 import { formatTime, dotBg } from "@/lib/threshold";
 
 const QUICK = [
-  { label: "Dasbor", to: "/", icon: LayoutDashboard },
+  { label: "Dasbor", to: "/dashboard", icon: LayoutDashboard },
   { label: "Monitoring", to: "/monitoring", icon: Activity },
   { label: "Riwayat", to: "/history", icon: HistoryIcon },
   { label: "Alert", to: "/alerts", icon: Bell },
@@ -33,7 +33,7 @@ export function RightRail() {
         <button
           type="button"
           onClick={() => navigate("/monitoring")}
-          className="grid h-10 w-10 cursor-pointer place-items-center rounded-[10px] border border-[#eceef5] bg-white text-[#3d41ad] transition-colors hover:bg-[#f1f3f9]"
+          className="grid h-10 w-10 cursor-pointer place-items-center rounded-[10px] border border-[#eceef5] bg-white text-[#0e9f90] transition-colors hover:bg-[#f1f3f9]"
           title="Monitoring"
           aria-label="Buka monitoring"
         >
@@ -42,7 +42,7 @@ export function RightRail() {
         <button
           type="button"
           onClick={() => navigate("/alerts")}
-          className="grid h-10 w-10 cursor-pointer place-items-center rounded-[10px] border border-[#eceef5] bg-white text-[#3d41ad] transition-colors hover:bg-[#f1f3f9]"
+          className="grid h-10 w-10 cursor-pointer place-items-center rounded-[10px] border border-[#eceef5] bg-white text-[#0e9f90] transition-colors hover:bg-[#f1f3f9]"
           title="Alert"
           aria-label="Buka alert"
         >
@@ -51,7 +51,7 @@ export function RightRail() {
       </div>
 
       <div className="text-center">
-        <div className="mx-auto grid h-[62px] w-[62px] place-items-center rounded-[18px] bg-[#edf0fa] text-[24px] font-bold text-[#3d41ad]">
+        <div className="mx-auto grid h-[62px] w-[62px] place-items-center rounded-[18px] bg-[#e0f5f0] text-[24px] font-bold text-[#0e9f90]">
           {user?.name?.charAt(0).toUpperCase() ?? "U"}
         </div>
         <h4 className="mt-2.5 text-[14px] font-bold text-[#272a3b]">{user?.name ?? "User"}</h4>
@@ -106,7 +106,7 @@ export function RightRail() {
             onClick={() => navigate(q.to)}
             title={q.label}
             aria-label={q.label}
-            className="grid h-10 cursor-pointer place-items-center rounded-[10px] border border-[#eceef5] bg-white text-[#3d41ad] transition-colors hover:bg-[#f1f3f9]"
+            className="grid h-10 cursor-pointer place-items-center rounded-[10px] border border-[#eceef5] bg-white text-[#0e9f90] transition-colors hover:bg-[#f1f3f9]"
           >
             <q.icon className="h-4 w-4" />
           </button>
@@ -119,7 +119,7 @@ export function RightRail() {
           <button
             type="button"
             onClick={() => navigate("/alerts")}
-            className="cursor-pointer rounded-[8px] bg-[#f1f3f9] px-2.5 py-1 text-[11.5px] font-semibold text-[#3d41ad] transition-colors hover:bg-[#e7eaf4]"
+            className="cursor-pointer rounded-[8px] bg-[#f1f3f9] px-2.5 py-1 text-[11.5px] font-semibold text-[#0e9f90] transition-colors hover:bg-[#e7eaf4]"
           >
             Lihat semua
           </button>
@@ -139,7 +139,7 @@ export function RightRail() {
               >
                 <span className="flex min-w-0 items-center gap-2 font-semibold text-[#3b4055]">
                   <span className="grid h-7 w-7 shrink-0 place-items-center rounded-[8px] bg-[#f1f3f9]">
-                    <Radio className="h-3.5 w-3.5 text-[#3d41ad]" />
+                    <Radio className="h-3.5 w-3.5 text-[#0e9f90]" />
                   </span>
                   <span className="truncate">{a.sensor?.name ?? a.sensor?.sensorCode ?? "Sensor"}</span>
                 </span>
