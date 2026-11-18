@@ -84,7 +84,7 @@ export function AuthLayout({ title, subtitle, children, footer, swapClass }: Aut
 <span className="grid h-10 w-10 place-items-center rounded-[12px] bg-[#14b8a6] text-[15px] font-extrabold text-white">
               ST
             </span>
-              <span className="text-[15px] font-bold tracking-[-0.01em]">Smart Temp Monitor</span>
+              <span className="text-[15px] font-bold tracking-[-0.01em]">Pemantauan Gudang Obat</span>
             </div>
 
             <h1 className="mt-10 text-[clamp(26px,3.4vw,38px)] font-extrabold leading-[1.12] tracking-[-0.02em]">
@@ -183,7 +183,7 @@ export function AuthLayout({ title, subtitle, children, footer, swapClass }: Aut
               <span className="grid h-8 w-8 place-items-center rounded-[9px] bg-[#14b8a6] text-[12px] font-extrabold text-white">
                 ST
               </span>
-              <span className="text-[13.5px] font-bold text-[#272a3b]">Smart Temp</span>
+              <span className="text-[13.5px] font-bold text-[#272a3b]">Gudang Obat</span>
             </div>
             <h2 className="mt-6 text-[clamp(24px,2.6vw,30px)] font-extrabold leading-tight tracking-[-0.02em] text-[#272a3b]">
               {title}

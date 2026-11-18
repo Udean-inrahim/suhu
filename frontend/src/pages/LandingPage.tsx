@@ -69,7 +69,7 @@ export function LandingPage() {
           <span className="grid size-9 place-items-center rounded-xl bg-[#14b8a6] text-white">
             <Thermometer className="size-5" />
           </span>
-          <span className="text-[15px] font-semibold tracking-tight">Smart Temp Monitor</span>
+          <span className="text-[15px] font-semibold tracking-tight">Pemantauan Gudang Obat</span>
         </div>
         <div className="flex items-center gap-2">
           <Link
@@ -104,14 +104,14 @@ export function LandingPage() {
           <div className="max-w-2xl">
             <span className="inline-flex items-center gap-2 rounded-full bg-white/15 px-3 py-1 text-sm font-medium text-white ring-1 ring-white/25 backdrop-blur">
               <Activity className="size-3.5" />
-              Monitoring suhu ruangan secara real-time
+              Pemantauan suhu dan kelembapan gudang obat
             </span>
             <h1 className="mt-5 text-4xl font-semibold tracking-tight text-balance text-white sm:text-5xl">
-              Pantau suhu dan kelembapan rumah Anda dari satu dasbor
+              Pantau suhu dan kelembapan gudang obat dari satu dasbor
             </h1>
             <p className="mt-5 text-lg text-pretty text-white/85">
-              Sensor mengirim data lewat MQTT, tersimpan di database, lalu tampil sebagai grafik
-              naik-turun dan alert otomatis saat ambang batas terlampaui.
+              Sensor mengirim data ke dasbor untuk menampilkan kondisi gudang dan memberi peringatan
+              saat ambang operasional terlampaui. Sesuaikan ambang dengan SOP penyimpanan obat.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link
@@ -176,7 +176,7 @@ export function LandingPage() {
 
       <footer className="border-t">
         <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-3 px-6 py-8 text-sm text-slate-500">
-          <span>Smart Temp Monitor, aplikasi tugas monitoring suhu dan kelembapan.</span>
+          <span>Pemantauan suhu dan kelembapan gudang obat. Ambang harus mengikuti SOP penyimpanan.</span>
           <div className="flex gap-4">
             <Link className="transition-colors hover:text-slate-800" to="/login">
               Masuk

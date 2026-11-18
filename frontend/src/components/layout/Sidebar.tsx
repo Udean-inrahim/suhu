@@ -45,9 +45,9 @@ export function Sidebar({ onClose }: SidebarProps) {
         </span>
         <div className="min-w-0">
           <p className="truncate text-[16px] font-bold leading-none tracking-[-0.01em] text-[#272a3b]">
-            Smart Temp
+            Gudang Obat
           </p>
-          <p className="mt-1 text-[11.5px] font-medium text-[#6b7280]">Monitoring</p>
+          <p className="mt-1 text-[11.5px] font-medium text-[#6b7280]">Pemantauan suhu</p>
         </div>
       </div>
 

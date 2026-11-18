@@ -33,7 +33,7 @@
 // ------------------ KONFIGURASI ------------------
 const char* SSID_WIFI = "Kedai Supeno Belakang";
 const char* PASSWORD_WIFI = "kopiaren";
-const char* API_URL = "https://tugas-bu-dian.vercel.app/api/readings";
+const char* API_URL = "https://suhu-ivory.vercel.app/api/readings";
 const char* SENSOR_CODE = "ESP32-01";   // WAJIB sama dengan kode di dashboard
 const char* API_KEY = "ISI_API_KEY_DARI_DASHBOARD"; // salin dari menu Sensor -> tombol kunci
 const int DHT_PIN = 4;                  // GPIO yang terhubung ke DATA DHT22

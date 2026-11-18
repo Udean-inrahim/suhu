@@ -25,10 +25,10 @@ export function SettingsPage() {
   const user = useAuthStore((s) => s.user);
   const isAdmin = user?.role === "ADMIN";
 
-  const [minTemp, setMinTemp] = useState("18");
-  const [maxTemp, setMaxTemp] = useState("30");
+  const [minTemp, setMinTemp] = useState("15");
+  const [maxTemp, setMaxTemp] = useState("25");
   const [minHum, setMinHum] = useState("40");
-  const [maxHum, setMaxHum] = useState("70");
+  const [maxHum, setMaxHum] = useState("60");
   const [refresh, setRefresh] = useState("5");
   const [saving, setSaving] = useState(false);
 
@@ -161,7 +161,7 @@ export function SettingsPage() {
 
   return (
     <div className="space-y-6">
-      <PageHeader title="Pengaturan" description="Atur ambang suhu, kelembapan, dan interval monitoring." />
+        <PageHeader title="Pengaturan" description="Atur ambang operasional gudang obat dan interval pemantauan. Sesuaikan dengan SOP penyimpanan obat." />
 
       <Reveal>
         <AccountCard />

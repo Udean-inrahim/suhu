@@ -113,10 +113,10 @@ enum AlertStatus {
 // ============ Settings ============
 model Setting {
   id              Int      @id @default(1)
-  minTemperature  Float    @default(18) @map("min_temperature")
-  maxTemperature  Float    @default(30) @map("max_temperature")
+  minTemperature  Float    @default(15) @map("min_temperature")
+  maxTemperature  Float    @default(25) @map("max_temperature")
   minHumidity     Float    @default(40) @map("min_humidity")
-  maxHumidity     Float    @default(70) @map("max_humidity")
+  maxHumidity     Float    @default(60) @map("max_humidity")
   refreshInterval Int      @default(5) @map("refresh_interval")
   updatedAt       DateTime @updatedAt @map("updated_at")
 

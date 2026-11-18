@@ -4,7 +4,7 @@ export async function getActiveSettings() {
   const settings = await prisma.setting.findFirst({ orderBy: { updatedAt: "desc" } });
   if (settings) return settings;
   return prisma.setting.create({
-    data: { id: 1, minTemperature: 18, maxTemperature: 30, minHumidity: 40, maxHumidity: 70 },
+    data: { id: 1, minTemperature: 15, maxTemperature: 25, minHumidity: 40, maxHumidity: 60 },
   });
 }
 

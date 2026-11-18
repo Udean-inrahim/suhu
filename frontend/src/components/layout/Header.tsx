@@ -38,7 +38,7 @@ export function Header({ onMenuToggle }: HeaderProps) {
         <Menu className="h-5 w-5" />
       </Button>
 
-      <h1 className="heading-section whitespace-nowrap">Smart Temp Monitor</h1>
+      <h1 className="heading-section whitespace-nowrap">Pemantauan Gudang Obat</h1>
 
       <div className="ml-auto flex items-center gap-4">
         <div className="hidden items-center gap-2 rounded-full bg-accent px-3 py-1 text-[11px] font-semibold text-muted-foreground md:flex">

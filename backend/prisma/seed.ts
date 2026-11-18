@@ -81,10 +81,10 @@ async function main() {
     update: {},
     create: {
       id: 1,
-      minTemperature: 18,
-      maxTemperature: 30,
+      minTemperature: 15,
+      maxTemperature: 25,
       minHumidity: 40,
-      maxHumidity: 70,
+      maxHumidity: 60,
       refreshInterval: 5,
     },
   });

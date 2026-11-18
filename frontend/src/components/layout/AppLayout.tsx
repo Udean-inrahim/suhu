@@ -51,7 +51,7 @@ export function AppLayout() {
             >
               <Menu className="h-5 w-5" />
             </Button>
-            <span className="heading-section whitespace-nowrap">Smart Temp Monitor</span>
+            <span className="heading-section whitespace-nowrap">Pemantauan Gudang Obat</span>
           </header>
           <main className="flex-1 overflow-y-auto p-4 lg:p-6">
             <Outlet />
